@@ -12,6 +12,8 @@ module Scompler
       end
 
       def call(content, schema_name: nil, version_number: nil)
+        return if content.blank?
+
         schema_name ||= self.schema_name
         version_number ||= self.version_number
 
