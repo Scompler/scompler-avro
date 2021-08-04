@@ -1,0 +1,178 @@
+{
+  "name": "facebook_stats",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "shares_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "likes_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "loves_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "wows_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "hahas_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "sads_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "angries_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "reactions_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "post_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "comments_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "impression_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "impression_paid_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "impression_organic_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "reaches_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "reaches_paid_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "reaches_organic_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "unlike_page_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "hide_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "hide_all_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "report_spam_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "video_plays_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "others_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "photo_views_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "links_clicks",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "message",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "article_idx",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "posted_at",
+      "type": [
+        "null",
+        "long"
+      ],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "account_idx",
+      "type": "string"
+    }
+  ]
+}
