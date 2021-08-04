@@ -1,0 +1,45 @@
+{
+  "name": "youtube_stats",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "views_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "likes_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "dislikes_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "favorites_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "comments_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}

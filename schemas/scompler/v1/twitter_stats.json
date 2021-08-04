@@ -1,0 +1,31 @@
+{
+  "name": "twitter_stats",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "tweets_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "favorites_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "retweets_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}

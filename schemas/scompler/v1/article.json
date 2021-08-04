@@ -1,0 +1,21 @@
+{
+  "name": "article",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "story_idx",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "account_idx",
+      "type": "string"
+    }
+  ]
+}

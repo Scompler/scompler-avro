@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'avro_turf'
   spec.add_dependency 'aws-sdk-glue'
   spec.add_dependency 'concurrent-ruby'
+  spec.add_dependency 'dry-configurable'
   spec.add_dependency 'snappy'
   spec.add_development_dependency 'bundler', '~> 1.17'
   spec.add_development_dependency 'rake', '~> 10.0'

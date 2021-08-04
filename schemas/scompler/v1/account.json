@@ -1,0 +1,10 @@
+{
+  "name": "account",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    }
+  ]
+}

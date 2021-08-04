@@ -1,0 +1,24 @@
+{
+  "name": "linkedin_stats",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "likes_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "comments_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}

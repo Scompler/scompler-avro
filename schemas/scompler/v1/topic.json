@@ -1,0 +1,14 @@
+{
+  "name": "topic",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "account_idx",
+      "type": "string"
+    }
+  ]
+}

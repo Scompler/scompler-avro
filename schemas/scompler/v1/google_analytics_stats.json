@@ -1,0 +1,101 @@
+{
+  "name": "google_analytics_stats",
+  "type": "record",
+  "fields": [
+    {
+      "name": "external_idx",
+      "type": "string"
+    },
+    {
+      "name": "sessions_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_direct",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_search",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_social",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_referral",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_email",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "traffic_paid",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "bounce_rate",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "new_visitors_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "returning_visitors_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "session_duration",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "avg_session_duration",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "page_views_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    }
+  ]
+}
