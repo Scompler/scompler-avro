@@ -12,7 +12,7 @@ module Scompler
         setting :force, false
         setting :skip_nil, true
         setting :compress, true
-        setting :expires_in, 24.hours
+        setting :expires_in, 86400
         setting :version
         setting :race_condition_ttl
       end
