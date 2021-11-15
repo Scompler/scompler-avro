@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
 require 'dry-configurable'
-require_relative './schema_cache'
 
 module Scompler
   module Avro
     class Configuration
       extend Dry::Configurable
+
       setting :cache, SchemaCache.new
+      setting :logger, ActiveSupport::Logger.new(STDOUT)
+
       setting :cache_options do
         setting :force, false
         setting :skip_nil, true

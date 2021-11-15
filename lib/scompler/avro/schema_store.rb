@@ -34,7 +34,7 @@ module Scompler
 
           cache_path = full_cache_path_for(fullname)
           begin
-            @schemas[fullname] = Scompler::Avro.config.cache.fetch(cache_path, cache_options) do
+            @schemas[fullname] = Avro.cache.fetch(cache_path, cache_options) do
               load_schema!(schema_name: schema_name, version_number: version_number)
             end
           rescue ::Avro::SchemaParseError => e
@@ -55,7 +55,8 @@ module Scompler
       def load_schema!(schema_name:, version_number: 1)
         schema_definition = begin
           load_glue_schema!(schema_name, version_number)
-        rescue Aws::Errors::ServiceError
+        rescue Aws::Errors::ServiceError => e
+          Avro.logger.warn(e.message)
           load_local_schema!(schema_name, version_number)
         end
 
@@ -73,7 +74,7 @@ module Scompler
       def load_local_schema!(schema_name, version_number = 1)
         file_path = File.join(
           SCHEMAS_RELATIVE_PATH,
-          registry_name,
+          registry_name.to_s,
           "v#{version_number}",
           "#{schema_name}.json"
         )
@@ -89,7 +90,7 @@ module Scompler
       end
 
       def cache_options
-        Scompler::Avro.config.cache_options.to_h
+        Avro.cache_options.to_h
       end
 
       def client
