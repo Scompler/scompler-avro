@@ -3,7 +3,7 @@
 module Scompler
   module Avro
     class SchemaCache
-      def fetch(name, options = {}, &block)
+      def fetch(_name, _options = {}, &_block)
         yield if block_given?
       end
     end
