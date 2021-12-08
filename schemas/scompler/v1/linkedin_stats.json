@@ -47,13 +47,6 @@
         "null",
         "int"
       ]
-    },
-    {
-      "name": "comments_count",
-      "type": [
-        "null",
-        "int"
-      ]
     }
   ]
 }
