@@ -19,6 +19,41 @@
         "null",
         "int"
       ]
+    },
+    {
+      "name": "shares_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "clicks_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "engagements_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "impressions_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "comments_count",
+      "type": [
+        "null",
+        "int"
+      ]
     }
   ]
 }
