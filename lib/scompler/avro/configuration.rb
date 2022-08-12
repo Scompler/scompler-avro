@@ -7,14 +7,14 @@ module Scompler
     class Configuration
       extend Dry::Configurable
 
-      setting :cache, SchemaCache.new
-      setting :logger, ActiveSupport::Logger.new($stdout)
+      setting :cache, default: SchemaCache.new
+      setting :logger, default: ActiveSupport::Logger.new($stdout)
 
       setting :cache_options do
-        setting :force, false
-        setting :skip_nil, true
-        setting :compress, true
-        setting :expires_in, 86_400
+        setting :force, default: false
+        setting :skip_nil, default: true
+        setting :compress, default: true
+        setting :expires_in, default: 86_400
         setting :version
         setting :race_condition_ttl
       end
