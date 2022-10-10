@@ -7,7 +7,14 @@
       "type": "string"
     },
     {
-      "name": "tweets_count",
+      "name": "retweets_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "quotes_count",
       "type": [
         "null",
         "int"
@@ -21,7 +28,14 @@
       ]
     },
     {
-      "name": "retweets_count",
+      "name": "replies_count",
+      "type": [
+        "null",
+        "int"
+      ]
+    },
+    {
+      "name": "video_views_count",
       "type": [
         "null",
         "int"
