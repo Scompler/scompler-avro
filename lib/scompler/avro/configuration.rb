@@ -9,6 +9,8 @@ module Scompler
 
       setting :cache, default: SchemaCache.new
       setting :logger, default: ActiveSupport::Logger.new($stdout)
+      setting :topic_mapper, default: nil
+      setting :local_schema_definition, default: false
 
       setting :cache_options do
         setting :force, default: false

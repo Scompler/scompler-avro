@@ -35,7 +35,7 @@ module Scompler
       end
 
       def fetch_schema_name(params)
-        Karafka::App.config.topic_mapper.schema_name_from_topic(params.topic)
+        Avro.config.topic_mapper.schema_name_from_topic(params.topic)
       end
     end
   end

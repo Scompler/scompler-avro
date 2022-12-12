@@ -53,14 +53,7 @@ module Scompler
       end
 
       def load_schema!(schema_name:, version_number: 1)
-        schema_definition = begin
-          load_glue_schema!(schema_name, version_number)
-        rescue Aws::Errors::ServiceError => e
-          Avro.logger.warn(e.message)
-          load_local_schema!(schema_name, version_number)
-        end
-
-        schema = ::Avro::Schema.parse(schema_definition)
+        schema = ::Avro::Schema.parse(schema_definition(schema_name, version_number))
         if schema.respond_to?(:fullname) && schema.fullname != schema_name
           error_message = "expected schema `#{response.schema_arn}' " \
                           "of #{response.version_number} " \
@@ -69,6 +62,19 @@ module Scompler
         end
 
         schema
+      end
+
+      def schema_definition(schema_name, version_number)
+        if Avro.config.local_schema_definition
+          return load_local_schema!(schema_name, version_number)
+        end
+
+        begin
+          load_glue_schema!(schema_name, version_number)
+        rescue Aws::Errors::ServiceError, Seahorse::Client::NetworkingError => e
+          Avro.logger.warn(e.message)
+          load_local_schema!(schema_name, version_number)
+        end
       end
 
       def load_local_schema!(schema_name, version_number = 1)
