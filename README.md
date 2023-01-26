@@ -1,3 +1,5 @@
+## 🚨 NOTE: The repository has been migrated to Gitlab. Please do not use it anymore. Link: https://gitlab.scompler.dev/scompler-org/scompler-avro
+
 # Scompler Avro
 
 The library is the implementation of the Avro serializer/deserializer classes for 
